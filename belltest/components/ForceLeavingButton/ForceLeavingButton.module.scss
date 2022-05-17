@@ -1,0 +1,81 @@
+@import '../../scss/breakpoint';
+@import '../../scss/color';
+
+// メインビデオのボタン色
+.leaveBtn {
+  background-color: #F83030 !important;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  padding: 40px 40px 25px;
+  background-color: #fff;
+  border-radius: 1em;
+  transform: translate(-50%, -50%);
+  outline: transparent;
+  margin: auto;
+  z-index: 999; // 他のボタンよりも高く
+
+  width: 580px;
+
+  @include mq-md {
+    width: 95%;
+  }
+}
+
+.modalOverlay {
+  position: absolute;
+  inset: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30; // 他の設定ボタンより高く(>10)
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.innerModal {
+  text-align: center;
+  color: $main-color;
+  font-size: 18px;
+
+  p {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  ul {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  button {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 12px;
+
+    @include mq-md {
+      width: 100%;
+    }
+  }
+
+  .leave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    img {
+      width: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .cancel {
+    display: block;
+    border-radius: 50px;
+    border: 1px solid $main-color;
+  }
+}

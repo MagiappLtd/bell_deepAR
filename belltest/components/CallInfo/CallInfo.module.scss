@@ -1,0 +1,40 @@
+.mainWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+
+  .mic img {
+    width: 22px;
+  }
+
+  .connection img {
+    width: 22px;
+  }
+}
+
+.subWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  .mic img {
+    width: 16px;
+  }
+
+  .connection img {
+    width: 16px;
+  }
+}

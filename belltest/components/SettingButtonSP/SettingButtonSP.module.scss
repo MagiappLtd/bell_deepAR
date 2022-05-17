@@ -1,0 +1,36 @@
+@import '../../scss/color';
+
+.relative {
+  position: relative;
+}
+
+.smallSettingModal {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: white;
+  padding: 10px 20px;
+  width: 234px;
+  z-index: 100;
+
+  // mainVideoのdefaultスタイルで上書きされているのでimportantが必要
+  button {
+    display: flex !important;
+    border: none !important;
+    border-radius: 0% !important;
+    box-shadow: none !important;
+    align-items: center;
+    width: 100% !important;
+
+    img {
+      width: 18px !important;
+      margin-right: 10px;
+      flex-basis: 0;
+    }
+
+    p {
+      color: $main-color;
+      font-size: 18px;
+    }
+  }
+}

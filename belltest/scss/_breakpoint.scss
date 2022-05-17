@@ -1,0 +1,31 @@
+// Foundation is mobile first: It means large is from 1000px inluded
+// Below mixins mean small include 1000px, this is why we need to remove 1
+$breakpoint-xs: 320px;
+$breakpoint-md: 800px;
+$breakpoint-lg: 1000px;
+
+//320px以下SPに適用する場合
+@mixin mq-xs {
+  @media screen and (max-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media screen and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+// 800pxより大きい画面に適用したい場合
+@mixin mq-min-md {
+  @media screen and (min-width: $breakpoint-md + 1px) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media screen and (max-width: $breakpoint-lg) {
+    @content;
+  }
+}

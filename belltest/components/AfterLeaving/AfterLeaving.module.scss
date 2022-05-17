@@ -1,0 +1,58 @@
+@import '../../scss/breakpoint';
+@import '../../scss/color';
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  padding: 80px 20px;
+  background-color: #fff;
+  border-radius: 1em;
+  transform: translate(-50%, -50%);
+  outline: transparent;
+  margin: auto;
+
+  width: 580px;
+  @include mq-md {
+    width: 95%;
+  }
+
+  &.topZero {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  img {
+    width: 35%;
+    max-width: 125px;
+  }
+
+  // テキスト共通部分
+  p {
+    color: $main-color;
+    font-family: "游ゴシック体";
+  }
+
+  .boldText {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 15px 0;
+    font-size: 18px;
+    margin: auto;
+
+    width: 65%;
+    @include mq-md {
+      width: 95%;
+    }
+  }
+}
+
+.modalOverlay {
+  inset: 0px;
+}

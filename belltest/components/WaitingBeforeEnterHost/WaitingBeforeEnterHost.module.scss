@@ -1,0 +1,56 @@
+@import '../../scss/breakpoint';
+@import '../../scss/color';
+
+.modal {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  display: block;
+  padding: 80px 20px;
+  background-color: #fff;
+  border-radius: 1em;
+  transform: translateX(-50%);
+  outline: transparent;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 580px;
+  height: calc(100vh - 20px);
+
+  @include mq-md {
+    width: 95%;
+  }
+}
+
+.modalOverlay {
+  inset: 0px;
+}
+
+.innerModal {
+  text-align: center;
+
+  img {
+    width: 35%;
+    max-width: 125px;
+  }
+
+  // テキスト共通部分
+  p, h3 {
+    color: $main-color;
+    font-family: "游ゴシック体";
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
+
+.button {
+  width: 80% !important;
+  margin: 20px auto;
+  padding: 15px 0;
+  text-decoration: none;
+}

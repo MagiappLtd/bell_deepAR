@@ -1,0 +1,114 @@
+.pl-0,
+.px-0,
+.p-0 {
+  padding-left: 0 !important;
+}
+
+.pr-0,
+.px-0,
+.p-0 {
+  padding-right: 0 !important;
+}
+
+.pt-0,
+.py-0,
+.p-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0,
+.py-0,
+.p-0 {
+  padding-bottom: 0 !important;
+}
+
+$paddings: 4,
+8,
+12,
+16,
+20,
+24,
+32,
+36,
+40;
+
+@each $padding in $paddings {
+
+  .pl-#{$padding},
+  .px-#{$padding},
+  .p-#{$padding} {
+    padding-left: #{$padding}px;
+  }
+
+  .pr-#{$padding},
+  .px-#{$padding},
+  .p-#{$padding} {
+    padding-right: #{$padding}px;
+  }
+
+  .pt-#{$padding},
+  .py-#{$padding},
+  .p-#{$padding} {
+    padding-top: #{$padding}px;
+  }
+
+  .pb-#{$padding},
+  .py-#{$padding},
+  .p-#{$padding} {
+    padding-bottom: #{$padding}px;
+  }
+
+  @include mq-md {
+
+    .sp-pl-#{$padding},
+    .sp-px-#{$padding},
+    .sp-p-#{$padding} {
+      padding-left: #{$padding}px;
+    }
+
+    .sp-pr-#{$padding},
+    .sp-px-#{$padding},
+    .sp-p-#{$padding} {
+      padding-right: #{$padding}px;
+    }
+
+    .sp-pt-#{$padding},
+    .sp-py-#{$padding},
+    .sp-p-#{$padding} {
+      padding-top: #{$padding}px;
+    }
+
+    .sp-pb-#{$padding},
+    .sp-py-#{$padding},
+    .sp-p-#{$padding} {
+      padding-bottom: #{$padding}px;
+    }
+  }
+
+  @include mq-min-md {
+
+    .pc-pl-#{$padding},
+    .pc-px-#{$padding},
+    .pc-p-#{$padding} {
+      padding-left: #{$padding}px;
+    }
+
+    .pc-pr-#{$padding},
+    .pc-px-#{$padding},
+    .pc-p-#{$padding} {
+      padding-right: #{$padding}px;
+    }
+
+    .pc-pt-#{$padding},
+    .pc-py-#{$padding},
+    .pc-p-#{$padding} {
+      padding-top: #{$padding}px;
+    }
+
+    .pc-pb-#{$padding},
+    .pc-py-#{$padding},
+    .pc-p-#{$padding} {
+      padding-bottom: #{$padding}px;
+    }
+  }
+}

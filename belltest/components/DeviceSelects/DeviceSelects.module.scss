@@ -1,0 +1,45 @@
+@import '../../scss/color';
+@import '../../scss/breakpoint';
+
+.deviceSettings {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 40px;
+  @include mq-md {
+    margin-left: 0;
+  }
+  grid-area: deviceSettings;
+  .selectWrap {
+    position: relative;
+    border: 1px solid $main-color;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      width: 23px;
+    }
+
+    .select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      height: auto;
+      background-image: none !important;
+      width: 100%;
+      padding: 15px 0;
+      cursor: pointer;
+    }
+
+    .selectMark {
+      height: 100%;
+      margin: 0 15px 0 10px;
+      font-size: 30px !important;
+    }
+  }
+  .selectWrap:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+}
+
+

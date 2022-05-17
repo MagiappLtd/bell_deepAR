@@ -1,0 +1,209 @@
+.ml-0,
+.mx-0,
+.m-0 {
+  margin-left: 0 !important;
+}
+
+.mr-0,
+.mx-0,
+.m-0 {
+  margin-right: 0 !important;
+}
+
+.mt-0,
+.my-0,
+.m-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0,
+.my-0,
+.m-0 {
+  margin-bottom: 0 !important;
+}
+
+@include mq-md {
+
+  .sp-ml-0,
+  .sp-mx-0,
+  .sp-m-0 {
+    margin-left: 0 !important;
+  }
+
+  .sp-mr-0,
+  .sp-mx-0,
+  .sp-m-0 {
+    margin-right: 0 !important;
+  }
+
+  .sp-mt-0,
+  .sp-my-0,
+  .sp-m-0 {
+    margin-top: 0 !important;
+  }
+
+  .sp-mb-0,
+  .sp-my-0,
+  .sp-m-0 {
+    margin-bottom: 0 !important;
+  }
+}
+
+@include mq-min-md {
+
+  .pc-ml-0,
+  .pc-mx-0,
+  .pc-m-0 {
+    margin-left: 0 !important;
+  }
+
+  .pc-mr-0,
+  .pc-mx-0,
+  .pc-m-0 {
+    margin-right: 0 !important;
+  }
+
+  .pc-mt-0,
+  .pc-my-0,
+  .pc-m-0 {
+    margin-top: 0 !important;
+  }
+
+  .pc-mb-0,
+  .pc-my-0,
+  .pc-m-0 {
+    margin-bottom: 0 !important;
+  }
+}
+
+$margins: 4,
+8,
+12,
+16,
+20,
+24,
+28,
+32,
+36,
+40;
+
+@each $margin in $margins {
+
+  .ml-#{$margin},
+  .mx-#{$margin},
+  .m-#{$margin} {
+    margin-left: #{$margin}px;
+  }
+
+  .mr-#{$margin},
+  .mx-#{$margin},
+  .m-#{$margin} {
+    margin-right: #{$margin}px;
+  }
+
+  .mt-#{$margin},
+  .my-#{$margin},
+  .m-#{$margin} {
+    margin-top: #{$margin}px;
+  }
+
+  .mb-#{$margin},
+  .my-#{$margin},
+  .m-#{$margin} {
+    margin-bottom: #{$margin}px;
+  }
+
+  @include mq-md {
+
+    .sp-ml-#{$margin},
+    .sp-mx-#{$margin},
+    .sp-m-#{$margin} {
+      margin-left: #{$margin}px;
+    }
+
+    .sp-mr-#{$margin},
+    .sp-mx-#{$margin},
+    .sp-m-#{$margin} {
+      margin-right: #{$margin}px;
+    }
+
+    .sp-mt-#{$margin},
+    .sp-my-#{$margin},
+    .sp-m-#{$margin} {
+      margin-top: #{$margin}px;
+    }
+
+    .sp-mb-#{$margin},
+    .sp-my-#{$margin},
+    .sp-m-#{$margin} {
+      margin-bottom: #{$margin}px;
+    }
+  }
+
+  @include mq-min-md {
+
+    .pc-ml-#{$margin},
+    .pc-mx-#{$margin},
+    .pc-m-#{$margin} {
+      margin-left: #{$margin}px;
+    }
+
+    .pc-mr-#{$margin},
+    .pc-mx-#{$margin},
+    .pc-m-#{$margin} {
+      margin-right: #{$margin}px;
+    }
+
+    .pc-mt-#{$margin},
+    .pc-my-#{$margin},
+    .pc-m-#{$margin} {
+      margin-top: #{$margin}px;
+    }
+
+    .pc-mb-#{$margin},
+    .pc-my-#{$margin},
+    .pc-m-#{$margin} {
+      margin-bottom: #{$margin}px;
+    }
+  }
+}
+
+.ml-auto,
+.mx-auto {
+  margin-left: auto;
+}
+
+.mr-auto,
+.mx-auto {
+  margin-right: auto;
+}
+
+@include mq-min-md {
+  .pc- {
+
+    &ml-auto,
+    &mx-auto {
+      margin-left: auto;
+    }
+
+    &mr-auto,
+    &mx-auto {
+      margin-right: auto;
+    }
+  }
+}
+
+@include mq-md {
+  .sp- {
+
+    &ml-auto,
+    &mx-auto {
+      margin-left: auto;
+    }
+
+    &mr-auto,
+    &mx-auto {
+      margin-right: auto;
+    }
+  }
+}
